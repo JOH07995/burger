@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row d-flex flex-column align-items-center py-3">
+        <h4 class="font-italic">WELCOME TO</h4>
+        <h1 class="font-weight-bold display-3">Tom's Burgers</h1>
+    </div>
+
+    <div id="content-wrapper" class="rounded py-5 mb-5">
+        <div class="row justify-content-center text-center pb-4">
+            <div class="col-md-6">
+                <h3>You can...</h3>
+                <h6>Devour something off the prepared Menu.</h6>
+                <h6>Add a Burger option to the menu in the field below.</h6>
+                <h6>Remake to send a burger back to the Menu!</h6>
+                <h6>Retire a Devoured Burger to the Trash!</h6>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-md-4 burger-list">
+                <h2 class="text-center font-weight-bold py-3">MENU</h2>
+                <ul class="item-list pb-4">
+                    {{#each burger}}
+                    {{#unless devoured}}
+                    {{> burgers/burger-type devoured=false}}
+                    {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="col-md-4 burger-list">
+                <h2 class="text-center font-weight-bold py-3">DEVOURED</h2>
+                <ul class="item-list pb-4">
+                    {{#each burger}}
+                    {{#if devoured}}
+                    {{> burgers/burger-type devoured=true}}
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-center pt-5">
+            <h2>Add A Burger</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="create-burger text-center px-2">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="burger" name="name">
+                    </div>
+                    <button class="btn btn-success" type="submit">Order Up!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

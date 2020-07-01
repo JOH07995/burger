@@ -21,6 +21,6 @@ USE burgers_db;
 -- Create the table burgers.
 CREATE TABLE burgers(
     id INT AUTO_INCREMENT PRIMARY KEY,
-    burger_name VARCHAR(50) NOT NULL,
-    devoured BOOLEAN NOT NULL
+    burger_name VARCHAR(255) UNIQUE NOT NULL,
+    devoured BOOLEAN DEFAULT FALSE
 );

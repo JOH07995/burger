@@ -8,7 +8,7 @@ INSERT INTO
     (burger_name
     , devoured)
 VALUES
-    ("Software Engineer", 2),
-    ("Accountant", 3),
-    ("Legal Team Lead", 4),
-    ("Lawyer", 4);
+    ("Good Burger", FALSE),
+    ("Krusty Burger", FALSE),
+    ("Krabby Patty", FALSE),
+    ("Hamburger", TRUE);
