@@ -37,7 +37,7 @@ node server.js
 You can use the program on Heroku [here](https://burgersbytom.herokuapp.com/).
 
 # Screenshot
-![App Screenshot](.update.)
+![App Screenshot](https://github.com/JOH07995/burger/blob/master/public/assets/img/burgerbytom.png?raw=true)
 
 ## Technologies
 
